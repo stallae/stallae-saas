@@ -1,0 +1,61 @@
+swagger: "2.0"
+info:
+  version: "1.0.0"
+  title: Stallae Dashboard API
+host: api.stallae.com
+basePath: /v1
+schemes:
+  - https
+consumes:
+  - application/json
+produces:
+  - application/json
+
+paths:
+  /dashboard:
+    get:
+      summary: Retorna as estatísticas do dashboard
+      responses:
+        200:
+          description: Estatísticas do dashboard
+
+  /dashboard/monitors:
+    get:
+      summary: Lista todos os monitores do usuário
+      responses:
+        200:
+          description: Lista de monitores
+    post:
+      summary: Cria um novo monitor
+      responses:
+        201:
+          description: Monitor criado
+    delete:
+      summary: Remove um monitor
+      responses:
+        204:
+          description: Monitor removido
+
+  /dashboard/monitors/{id}:
+    get:
+      summary: Retorna os detalhes de um monitor específico
+      parameters:
+        - name: id
+          in: path
+          description: ID do monitor
+          required: true
+          type: integer
+      responses:
+        200:
+          description: Detalhes do monitor
+    put:
+      summary: Atualiza um monitor específico
+      parameters:
+        - name: id
+          in: path
+          description: ID do monitor
+          required: true
+          type: integer
+      responses:
+        200:
+          description: Monitor atualizado

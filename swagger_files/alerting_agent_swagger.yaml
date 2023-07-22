@@ -1,0 +1,55 @@
+swagger: "2.0"
+info:
+  version: "1.0.0"
+  title: Stallae Alerting Agent API
+host: api.stallae.com
+basePath: /v1
+schemes:
+  - https
+consumes:
+  - application/json
+produces:
+  - application/json
+
+paths:
+  /alerts:
+    get:
+      summary: Lista todos os alertas
+      responses:
+        200:
+          description: Lista de alertas
+    post:
+      summary: Cria um novo alerta
+      responses:
+        201:
+          description: Alerta criado
+
+  /alerts/{id}/deactivate:
+    put:
+      summary: Desativa um alerta
+      parameters:
+        - name: id
+          in: path
+          description: ID do alerta
+          required: true
+          type: integer
+      responses:
+        200:
+          description: Alerta desativado
+
+  /contacts:
+    get:
+      summary: Lista todos os contatos para alertas
+      responses:
+        200:
+          description: Lista de contatos para alertas
+    post:
+      summary: Adiciona um novo contato para alertas
+      responses:
+        201:
+          description: Contato para alertas adicionado
+    delete:
+      summary: Remove um contato para alertas
+      responses:
+        204:
+          description: Contato para alertas removido

@@ -1,0 +1,110 @@
+swagger: "2.0"
+info:
+  version: "1.0.0"
+  title: Stallae Admin API
+host: api.stallae.com
+basePath: /v1
+schemes:
+  - https
+consumes:
+  - application/json
+produces:
+  - application/json
+
+paths:
+  /users:
+    get:
+      summary: Lista todos os usuários
+      responses:
+        200:
+          description: Lista de usuários
+    post:
+      summary: Cria um novo usuário
+      responses:
+        201:
+          description: Usuário criado
+    delete:
+      summary: Remove um usuário
+      responses:
+        204:
+          description: Usuário removido
+
+  /monitors:
+    get:
+      summary: Lista todos os monitores
+      responses:
+        200:
+          description: Lista de monitores
+    post:
+      summary: Cria um novo monitor
+      responses:
+        201:
+          description: Monitor criado
+    delete:
+      summary: Remove um monitor
+      responses:
+        204:
+          description: Monitor removido
+
+  /regions:
+    get:
+      summary: Lista todas as regiões
+      responses:
+        200:
+          description: Lista de regiões
+    post:
+      summary: Cria uma nova região
+      responses:
+        201:
+          description: Região criada
+    delete:
+      summary: Remove uma região
+      responses:
+        204:
+          description: Região removida
+
+  /monitoringAgents:
+    get:
+      summary: Lista todos os agentes de monitoramento
+      responses:
+        200:
+          description: Lista de agentes de monitoramento
+    post:
+      summary: Cria um novo agente de monitoramento
+      responses:
+        201:
+          description: Agente de monitoramento criado
+    delete:
+      summary: Remove um agente de monitoramento
+      responses:
+        204:
+          description: Agente de monitoramento removido
+
+  /alertingAgents:
+    get:
+      summary: Lista todos os agentes de alerta
+      responses:
+        200:
+          description: Lista de agentes de alerta
+    post:
+      summary: Cria um novo agente de alerta
+      responses:
+        201:
+          description: Agente de alerta criado
+    delete:
+      summary: Remove um agente de alerta
+      responses:
+        204:
+          description: Agente de alerta removido
+
+  /globalSettings:
+    get:
+      summary: Lista todas as configurações globais
+      responses:
+        200:
+          description: Lista de configurações globais
+    put:
+      summary: Atualiza as configurações globais
+      responses:
+        200:
+          description: Configurações globais atualizadas

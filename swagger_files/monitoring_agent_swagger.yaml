@@ -1,0 +1,60 @@
+swagger: "2.0"
+info:
+  version: "1.0.0"
+  title: Stallae Monitoring Agent API
+host: api.stallae.com
+basePath: /v1
+schemes:
+  - https
+consumes:
+  - application/json
+produces:
+  - application/json
+
+paths:
+  /monitoringAgents:
+    get:
+      summary: Lista todos os agentes de monitoramento
+      responses:
+        200:
+          description: Lista de agentes de monitoramento
+    post:
+      summary: Cria um novo agente de monitoramento
+      responses:
+        201:
+          description: Agente de monitoramento criado
+
+  /monitoringAgents/{id}:
+    get:
+      summary: Retorna os detalhes de um agente de monitoramento específico
+      parameters:
+        - name: id
+          in: path
+          description: ID do agente de monitoramento
+          required: true
+          type: integer
+      responses:
+        200:
+          description: Detalhes do agente de monitoramento
+    put:
+      summary: Atualiza um agente de monitoramento específico
+      parameters:
+        - name: id
+          in: path
+          description: ID do agente de monitoramento
+          required: true
+          type: integer
+      responses:
+        200:
+          description: Agente de monitoramento atualizado
+    delete:
+      summary: Remove um agente de monitoramento
+      parameters:
+        - name: id
+          in: path
+          description: ID do agente de monitoramento
+          required: true
+          type: integer
+      responses:
+        204:
+          description: Agente de monitoramento removido

@@ -1,0 +1,66 @@
+swagger: "2.0"
+info:
+  version: "1.0.0"
+  title: Stallae User API
+host: api.stallae.com
+basePath: /v1
+schemes:
+  - https
+consumes:
+  - application/json
+produces:
+  - application/json
+
+paths:
+  /profile:
+    get:
+      summary: Retorna o perfil do usuário
+      responses:
+        200:
+          description: Perfil do usuário
+    put:
+      summary: Atualiza o perfil do usuário
+      responses:
+        200:
+          description: Perfil do usuário atualizado
+
+  /dashboard:
+    get:
+      summary: Retorna as estatísticas do dashboard
+      responses:
+        200:
+          description: Estatísticas do dashboard
+
+  /monitors:
+    get:
+      summary: Lista todos os monitores do usuário
+      responses:
+        200:
+          description: Lista de monitores
+    post:
+      summary: Cria um novo monitor
+      responses:
+        201:
+          description: Monitor criado
+    delete:
+      summary: Remove um monitor
+      responses:
+        204:
+          description: Monitor removido
+
+  /contacts:
+    get:
+      summary: Lista todos os contatos do usuário
+      responses:
+        200:
+          description: Lista de contatos
+    post:
+      summary: Cria um novo contato
+      responses:
+        201:
+          description: Contato criado
+    delete:
+      summary: Remove um contato
+      responses:
+        204:
+          description: Contato removido
