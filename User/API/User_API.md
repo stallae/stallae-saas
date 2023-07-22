@@ -1,6 +1,6 @@
 ### User_API.md
 
-# API do Usuário
+#  Usuário
 
 A API do usuário Stallae é voltada para o usuário e usada principalmente através de uma interface de front-end para registrar usuários, gerenciar contatos, gerenciar monitores e visualizar dados históricos.
 
