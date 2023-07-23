@@ -28,7 +28,7 @@ Para facilitar esse processo, a Stallae oferece uma interface intuitiva e amigá
 Para mais informações sobre as diferentes funções da Stallae, consulte os documentos a seguir:
 
 - [Agentes de Monitoramento](Agentes/Agente_de_Monitoramento.md)
-- [Agentes de Alerta](Agentes/Agente_de_Monitoramento.md)
+- [Agentes de Alerta](Agentes/Agente_de_Alerta.md)
 - [Política de Retenção de Dados](Plitica_de_dados.md)
 
 ## Suporte
