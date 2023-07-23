@@ -25,7 +25,3 @@ Os clientes podem solicitar a exclusão de seus dados a qualquer momento. Quando
 ## 6. Revisão da Política
 
 Esta política será revisada e atualizada conforme necessário para refletir as práticas de retenção de dados da Stallae e as obrigações legais. 
-
----
-
-Este é um exemplo de uma política de retenção de dados e pode precisar ser adaptada às necessidades específicas da Stallae. Recomenda-se que você consulte um advogado ou especialista em privacidade de dados para garantir que a política de retenção de dados atenda a todos os requisitos legais e regulatórios aplicáveis.

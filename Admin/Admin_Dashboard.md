@@ -1,10 +1,11 @@
 # API do Admin
 
-A API do administrador Stallae oferece um poderoso conjunto de endpoints para gerenciar e configurar o ambiente Stallae. Com a API do administrador, você pode gerenciar usuários, monitores, agentes de monitoramento e alerta, regiões, modelos de mensagens, e ajustar as configurações globais do sistema.
+O  administrador Stallae deve ter um  conjunto de endpoints para gerenciar e configurar o ambiente Stallae. Com a API do administrador, você pode gerenciar usuários, monitores, agentes de monitoramento e alerta, regiões, modelos de mensagens, e ajustar as configurações globais do sistema.
 
 ## Características
 
 - **Segurança avançada**: Autenticação multifatorial, bloqueio temporário de conta para proteção contra ataques de força bruta, lista de IPs para permitir acesso apenas através de IPs específicos, registro de acesso e alterações em qualquer objeto.
+
 - **Gerenciamento de Modelos de Mensagens**: Crie e gerencie modelos de mensagens para diferentes tipos de notificações.
 - **Gerenciamento de Usuários**: Adicione, edite, exclua, habilite e desabilite usuários. Gerencie as chaves de API do usuário, obtenha os monitores do usuário, limite o número máximo de monitores por usuário e limite o número máximo de contatos por usuário.
 - **Gerenciamento de Monitores**: Adicione, edite, exclua, visualize, pause e inicie monitores de usuários.
