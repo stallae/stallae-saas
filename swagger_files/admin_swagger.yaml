@@ -23,11 +23,30 @@ paths:
       responses:
         201:
           description: Usuário criado
+    put:
+      summary: Atualiza um usuário
+      responses:
+        200:
+          description: Usuário atualizado
     delete:
       summary: Remove um usuário
       responses:
         204:
           description: Usuário removido
+  
+  /users/pause:
+    put:
+      summary: Pausa monitoramento do serviço para o usuário
+      responses:
+        200:
+          description: Monitoramento de serviço pausado
+  
+  /users/start:
+    post:
+      summary: Inicia monitoramento do serviço para o usuário
+      responses:
+        201:
+          description: Monitoramento de serviço iniciado
 
   /monitors:
     get:

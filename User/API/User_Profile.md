@@ -1,6 +1,6 @@
 ### Perfil de Usuário
 
-A API do usuário oferece funções de gerenciamento para configurações de perfil e gerenciamento de perfil do usuário. Aqui estão as funções que são suportadas:
+A API do usuário oferece funções de gerenciamento para configurações e gerenciamento de perfil do usuário. Aqui estão as funções que são suportadas:
 
 - **Campos do Perfil do Usuário**: Esses são os campos que o usuário pode atualizar em seu perfil:
 
